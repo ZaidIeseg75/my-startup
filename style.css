@@ -6,17 +6,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 html {
   scroll-behavior: smooth;
 }
-
+ 
 body {
   font-family: 'DM Sans', sans-serif;
   color: #0f0f0f;
   background: #fafaf8;
 }
-
+ 
 /* ===========================
    NAV
 =========================== */
@@ -30,11 +30,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  background: rgba(250, 250, 248, 0.9);
+  background: rgba(250, 250, 248, 0.92);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0,0,0,0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
-
+ 
 .nav-logo {
   font-family: 'Syne', sans-serif;
   font-size: 22px;
@@ -42,25 +42,20 @@ nav {
   color: #0f0f0f;
   letter-spacing: 2px;
 }
-
+ 
 .nav-links {
   display: flex;
   gap: 36px;
 }
-
+ 
 .nav-links a {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   color: #555;
   letter-spacing: 0.5px;
-  transition: color 0.2s;
 }
-
-.nav-links a:hover {
-  color: #0f0f0f;
-}
-
+ 
 /* ===========================
    HERO
 =========================== */
@@ -70,11 +65,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 120px 60px 80px 60px;
+  padding: 140px 60px 80px 60px;
   max-width: 1100px;
   margin: 0 auto;
 }
-
+ 
 .hero-tag {
   font-size: 12px;
   font-weight: 700;
@@ -87,7 +82,7 @@ nav {
   border-radius: 100px;
   display: inline-block;
 }
-
+ 
 .hero h1 {
   font-family: 'Syne', sans-serif;
   font-size: 120px;
@@ -97,12 +92,12 @@ nav {
   margin-bottom: 28px;
   color: #0f0f0f;
 }
-
-.hero h1 .accent {
+ 
+.accent {
   color: #c8f04a;
   -webkit-text-stroke: 2px #0f0f0f;
 }
-
+ 
 .hero-sub {
   font-size: 18px;
   line-height: 1.6;
@@ -110,33 +105,34 @@ nav {
   max-width: 520px;
   margin-bottom: 40px;
 }
-
+ 
 .hero-cta {
   display: flex;
   gap: 16px;
   margin-bottom: 64px;
 }
-
+ 
 .hero-stats {
   display: flex;
   align-items: center;
   gap: 32px;
   padding-top: 40px;
   border-top: 1px solid #e0e0e0;
+  width: 100%;
 }
-
+ 
 .stat {
   display: flex;
   flex-direction: column;
 }
-
+ 
 .stat-num {
   font-family: 'Syne', sans-serif;
   font-size: 32px;
   font-weight: 800;
   color: #0f0f0f;
 }
-
+ 
 .stat-label {
   font-size: 12px;
   color: #999;
@@ -144,15 +140,15 @@ nav {
   text-transform: uppercase;
   margin-top: 4px;
 }
-
+ 
 .stat-divider {
   width: 1px;
   height: 40px;
   background: #ddd;
 }
-
+ 
 /* ===========================
-   BUTTONS
+   BOUTONS
 =========================== */
 .btn-primary {
   display: inline-block;
@@ -161,18 +157,11 @@ nav {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.5px;
   text-decoration: none;
   padding: 16px 32px;
   border-radius: 100px;
-  transition: background 0.2s, transform 0.2s;
 }
-
-.btn-primary:hover {
-  background: #333;
-  transform: translateY(-2px);
-}
-
+ 
 .btn-secondary {
   display: inline-block;
   background: transparent;
@@ -184,29 +173,23 @@ nav {
   padding: 16px 32px;
   border-radius: 100px;
   border: 1.5px solid #ccc;
-  transition: border-color 0.2s, transform 0.2s;
 }
-
-.btn-secondary:hover {
-  border-color: #0f0f0f;
-  transform: translateY(-2px);
-}
-
+ 
 /* ===========================
    SECTIONS
 =========================== */
 .section {
   padding: 100px 60px;
 }
-
+ 
 .section-alt {
   background: #f3f3ef;
 }
-
+ 
 .section-dark {
   background: #0f0f0f;
 }
-
+ 
 .section-inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -214,32 +197,31 @@ nav {
   align-items: center;
   gap: 80px;
 }
-
+ 
 .section-inner.centered {
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
-
+ 
 .section-text {
   flex: 1;
 }
-
+ 
 .section-visual {
   flex-shrink: 0;
 }
-
+ 
 .big-letter {
   font-family: 'Syne', sans-serif;
   font-size: 220px;
   font-weight: 800;
-  color: #f0ede8;
+  color: #ece9e3;
   line-height: 1;
-  user-select: none;
 }
-
+ 
 /* ===========================
-   LABELS & HEADINGS
+   TEXTES
 =========================== */
 .label {
   font-size: 11px;
@@ -250,11 +232,11 @@ nav {
   display: block;
   margin-bottom: 16px;
 }
-
+ 
 .label.light {
-  color: #555;
+  color: #666;
 }
-
+ 
 h2 {
   font-family: 'Syne', sans-serif;
   font-size: 52px;
@@ -264,11 +246,11 @@ h2 {
   color: #0f0f0f;
   margin-bottom: 24px;
 }
-
+ 
 h2.white {
   color: white;
 }
-
+ 
 .section-text p {
   font-size: 16px;
   line-height: 1.75;
@@ -276,13 +258,13 @@ h2.white {
   margin-bottom: 16px;
   max-width: 480px;
 }
-
+ 
 .white-sub {
   font-size: 16px;
   color: #888;
   margin-bottom: 36px;
 }
-
+ 
 /* ===========================
    SKILL CARDS
 =========================== */
@@ -293,7 +275,7 @@ h2.white {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+ 
 .skill-card {
   background: white;
   border-radius: 20px;
@@ -301,15 +283,15 @@ h2.white {
   flex: 1;
   min-width: 220px;
   max-width: 300px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
   text-align: left;
 }
-
+ 
 .skill-icon {
   font-size: 32px;
   margin-bottom: 16px;
 }
-
+ 
 .skill-card h3 {
   font-family: 'Syne', sans-serif;
   font-size: 20px;
@@ -317,13 +299,13 @@ h2.white {
   margin-bottom: 10px;
   color: #0f0f0f;
 }
-
+ 
 .skill-card p {
   font-size: 14px;
   line-height: 1.6;
   color: #777;
 }
-
+ 
 /* ===========================
    TAGS
 =========================== */
@@ -334,7 +316,7 @@ h2.white {
   justify-content: center;
   margin-top: 32px;
 }
-
+ 
 .tag {
   background: white;
   border: 1.5px solid #e0e0e0;
@@ -344,7 +326,7 @@ h2.white {
   padding: 10px 20px;
   border-radius: 100px;
 }
-
+ 
 /* ===========================
    FOOTER
 =========================== */
@@ -356,7 +338,7 @@ footer {
   background: #fafaf8;
   border-top: 1px solid #eee;
 }
-
+ 
 /* ===========================
    RESPONSIVE
 =========================== */
@@ -364,42 +346,47 @@ footer {
   nav {
     padding: 16px 24px;
   }
-
+ 
   .nav-links {
     gap: 20px;
   }
-
+ 
   .hero {
-    padding: 100px 24px 60px 24px;
+    padding: 110px 24px 60px 24px;
   }
-
+ 
   .hero h1 {
-    font-size: 72px;
+    font-size: 64px;
   }
-
+ 
   .section {
     padding: 70px 24px;
   }
-
+ 
   .section-inner {
     flex-direction: column;
     gap: 40px;
   }
-
+ 
   .big-letter {
     font-size: 120px;
   }
-
+ 
   h2 {
-    font-size: 38px;
+    font-size: 36px;
   }
-
+ 
   .grid-3 {
     flex-direction: column;
     align-items: center;
   }
-
+ 
   .hero-stats {
     gap: 20px;
   }
+ 
+  .hero-cta {
+    flex-direction: column;
+  }
 }
+ 
